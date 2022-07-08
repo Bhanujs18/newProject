@@ -1,0 +1,302 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(-45deg, #ffffff, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+ }
+ .navButton{
+     text-decoration: none;
+     color: white;
+ }
+ .navButtonn{
+     text-decoration: none;
+     color: inherit;
+ }
+ .registerButton{
+    background-color: rgb(30, 164, 30);
+   text-decoration: none;
+    padding: 10%;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .inputSignUp{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+ .grid{
+    padding: 2% 6% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+
+ .signup{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(127,200,232,0.48829954345019255) 65%);
+ }
+.signUpBox{
+     width: 30rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.headingSignUp{
+    font-size: x-large;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    background-color: rgb(83, 136, 234);
+   
+}
+.copyrightdiv{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    padding-top: 2%;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 136, 234);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    position: static;
+}
+
+.copyrighti{
+ 
+ 
+    text-decoration: none; 
+    
+
+}
+#submit{
+    background-color: rgb(66, 211, 12);
+    color: white;
+}
+
+.login{
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+.loginDiv{
+display: flex;
+background-image: url('https://swall.teahub.io/photos/small/302-3023885_professional-blue-website-background.png');
+background-repeat: no-repeat;
+background-size: cover;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    justify-content: center;
+}
+
+.gridlogin{
+    width: 30rem;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ 
+.homeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.dividerHome{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    height: 90vh;
+    flex-wrap: wrap;
+ 
+   
+    justify-content: center;
+}
+
+.frontText{
+    padding-top: 7%;
+    font-size:10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .frontText {
+      text-align: center;
+    }
+  }
+.downloadcv{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+   
+    padding: 5% 15%;
+    border: none;
+    color: white;
+    width: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(146, 184, 221) 0px 15px 12px;
+    background-color: rgb(55, 99, 165);
+    
+}
+
+
+
+
+
+
+
+
+.downloadcv:hover {
+    color:white;
+background-color: rgb(208, 143, 143);
+background-color: green;
+cursor: pointer;
+transition: background-color 0.1s ease-out;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 25px, rgb(27, 136, 29) 0px 15px 12px;
+}
+
+
+
+
+
+
+
+
+
+.blockHome{
+   display: flex;
+   align-self: center;
+   justify-content: center;
+  
+}
+
+.imgHome{
+    height: 70vh;
+}
+
+
+.footerDiv{
+    display: flex;
+    align-items: center;
+    background-color: #a0ccf0;
+    padding: 2% 0% ;
+    width: 100%;
+    
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+    .footerDiv {
+      flex-wrap: wrap;
+      
+    }
+  }
+.footerdivision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .footerdivision {
+     
+      padding-top: 5%;
+    }
+  }
+
+.icon1{
+    color: black;
+}
+.icon1:hover{
+    color: rgb(206, 30, 168);
+    transform: scale(1.3);
+}
+.icon2{
+    color: black;
+ }
+ .icon2:hover{
+    color: rgb(53, 108, 192);
+    transform: scale(1.3);
+}
+ .icon3{
+    color: black;
+ }
+ .icon3:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+   
+}
+ .icon4{
+    color: black;
+ }
+ .icon4:hover{
+    color: rgb(53, 108, 192);
+    transform: scale(1.3);
+}
+
+ #socialicons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+ }
+
+
+ .projectDiv{
+    display: flex;
+    
+  }
+ @media screen and (max-width: 600px) {
+    .projectDiv {
+     display: block;
+      
+    }
+  }

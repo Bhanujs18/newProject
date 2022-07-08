@@ -10,16 +10,16 @@ router.post('/register', async (req, res) => {
    
  const {name , email , phone , address,  password} = req.body;
     if( !name || !email || !phone || !address  ||  !password)
-        return res.send(" blank!!")
+        return res.status(422).json({error :" blank!!"})
 try{      
      let user = await User.findOne({ email });
      if(user){
-         return res.send("User Already Exist!!")
+          return res.status(422).json({error :" Exist!!"})
      }
 
      user = new User  ({name , email , phone , address, password});
      await  user.save();
-     return res.send("User Registerd Succesfully!!")
+     return res.status(201).json({message : "Registered"})
 }catch(err){
      console.log(err)
 }
@@ -50,15 +50,15 @@ if(userLogin){
      });
 
      if(!isMatch){
-          res.json({message: "Error"})
+          return res.status(422).json({error :" error!!"})
           console.log(isMatch)
      }
      else{
-          res.json({message: "Logged in Successfully"})
+          return res.status(201).json({message : "Succesfull"})
      }
 }
 else{
-     res.json({message: "Error User"})
+     return res.status(422).json({error :" Error!!"})
 }
 }
 catch(err){
