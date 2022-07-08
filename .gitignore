@@ -1,5 +1,6 @@
 ./backend/node_modules
 ./frontend/node_modules
+config.env
 node_modules/.package-lock.json
 node_modules/.bin/browserslist
 node_modules/.bin/browserslist-lint
