@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from 'react';
 
 import Grid from '@mui/material/Grid';
@@ -77,6 +78,13 @@ const Login = async () => {
       
     </div>
     </div>
+=======
+import React from 'react'
+
+const Login = () => {
+  return (
+    <div>Login</div>
+>>>>>>> 76db1d4729f15c0fedb9c68e756c67887f214d8e
   )
 }
 
