@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState} from 'react';
 
 import Grid from '@mui/material/Grid';
@@ -7,39 +6,38 @@ import { Button, Typography } from '@mui/material';
 
 
 
-const Login = async () => {
+const Login = () => {
  
   const [email, setEmail] = useState(' ');
   const [password, setPassword] = useState(' ');
-
-  const loginUser = async (e) =>{
+  const loginUser = async (e)  =>{
     e.preventDefault();
-    const res = await fetch('/login',
-    {
+    
+const res = await fetch('./login',{
       method: "POST",
       headers:{
-        "Content-Type":"application/json"
+          "Content-Type":"application/json"
       },
       body:JSON.stringify({
-        email,
-        password
+      email ,password
       })
     })
     const data = res.json();
-    if(res.status === 400 || !data){
+    if(res.status === 400 || res.status === 422 || !data){
      window.alert("Invalid Login");
     }
     else{
      window.alert("Login Successfully")
     }
-
+ 
+  
   }
 
 
   return (
     <div className='loginDiv'>
     <div className='login'>
-      <form method='POST'>
+      <form method="POST">
         <Grid className='gridlogin'>
             <Typography>Login</Typography>
         </Grid>
@@ -78,13 +76,6 @@ const Login = async () => {
       
     </div>
     </div>
-=======
-import React from 'react'
-
-const Login = () => {
-  return (
-    <div>Login</div>
->>>>>>> 76db1d4729f15c0fedb9c68e756c67887f214d8e
   )
 }
 

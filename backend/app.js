@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require("path");
-const app = express();
 const dotenv = require("dotenv");
+
+
+
+const app = express();
+
 
 dotenv.config({ path: './config.env' })
 
@@ -13,34 +17,29 @@ require('./DATABSE/db.js');
 app.use(express.json());
 app.use(require('./Router/auth'));
 
-const middleware = (req,res,next)=>{
-    console.log('miidleware')
-    next();
-}
+// const middleware = (req,res,next)=>{
+//     console.log('miidleware')
+//     next();
+// }
 
-app.get('/register', (req, res) => {
-  res.send('Hello Wokrld! app')
-})
+// app.get('/register', (req, res) => {
+//   res.send('Hello Wokrld! app')
+// })
 
-app.get('/offers',middleware, (req, res) => {
-    res.send('Hello Wokrld! offers ')
-  })
 
-app.get('/profile', (req, res) => {
-    res.send('Hello Wokrld! profile')
-  })
+
+// app.get('/aboutme', (req, res) => {
+//     res.send('Hello Wokrld! profile')
+//   })
   
-app.get('/login', (req, res) => {
-    res.send('Hello Wokrld! login')
-  })
+// app.get('/login', (req, res) => {
+//     res.send('Hello Wokrld! login')
+//   })
  
-app.get('/signup', (req, res) => {
-    res.send('Hello Wokrld! signup')
-  })
+// app.get('/signup', (req, res) => {
+//     res.send('Hello Wokrld! signup')
+//   })
 
-app.use('/',(req,res)=>{
-    res.send('Hello you')
-});
 
 
 

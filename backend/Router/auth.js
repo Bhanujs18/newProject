@@ -1,8 +1,10 @@
 const express = require('express')
 const jwt = require('jsonwebtoken')
 const router = express.Router();
+
 const bcrypt = require('bcrypt')
 require('../DATABSE/db')
+const authenticate = require('../middleware/authenticate')
 
 const User = require('../models/user.js')
 
@@ -43,10 +45,10 @@ if(userLogin){
      const isMatch  = await bcrypt.compare(password, userLogin.password)
    
      const token = userLogin.generateAuthToken();
-     console.log(token)
-     res.cookie("jwtoken", token,{
-     expires: new Date(Date.now() + 172800000),
-     httpOnly: true
+        
+     res.cookie("jwtoken", token ,{
+          expires:new Date(Date.now()+15000000),
+          httpOnly:true,
      });
 
      if(!isMatch){
@@ -63,8 +65,15 @@ else{
 }
 catch(err){
      console.log(err)
+     return res.status(422).json({error :" Error!!"})
     }
 });
 
+
+
+
+router.get('/aboutme', authenticate ,(req, res) => {
+     res.send(req.rootUser);
+   })
 
 module.exports = router;

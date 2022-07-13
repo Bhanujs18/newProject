@@ -1,36 +1,44 @@
-<<<<<<< HEAD
 import React from 'react';
+import { useEffect } from 'react';
 import Projects from './Projects';
+import { useNavigate } from 'react-router-dom';
+const AboutMe = () => 
+ {
+  const navigate = useNavigate();
+             useEffect(() => {
+                         callaboutpage(); 
+                             })
 
+              const callaboutpage = async() => {
 
-const AboutMe = () => {
-   
+                     try {
+                         const res = await fetch('/aboutme', {
+                         method:"GET",
+                          header:{
+                          Accept:"application/json",
+                        "Content-Type": "application/json"
+                         },
+                         credentials:"include"
+                        });
+  
+
+                     if (res.status === 422){
+                       window.alert('fail')                  }
+                      }
+                      
+                      
+                      catch (error) {
+                        navigate('/login')
+                        }
+                      }
+
   return (
     <div>
+      <form method="GET">
         <Projects />
-=======
-import React from 'react'
-import { ThemeProvider } from '@mui/material/styles';
-import {createTheme, Container } from '@mui/system';
-
-
-const AboutMe = () => {
-    const theme = createTheme();
-  return (
-    <div>
-         <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-      
-       iencencn
-      </Container>
-    </ThemeProvider>
->>>>>>> 76db1d4729f15c0fedb9c68e756c67887f214d8e
+        </form>
     </div>
   )
 }
-
-<<<<<<< HEAD
+  
 export default AboutMe;
-=======
-export default AboutMe
->>>>>>> 76db1d4729f15c0fedb9c68e756c67887f214d8e
