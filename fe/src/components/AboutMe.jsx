@@ -2,48 +2,53 @@ import React from 'react';
 import Projects from './Projects';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import { useState } from 'react';
+import Loading from './Loading.js';
+
         
 const AboutMe = () => 
  {
+  const [loading, setLoading] = useState(false);
   const  navigate = useNavigate();
-  useEffect(() => {
-    
-    callaboutpage();
-  
-    return () => {
-    }
-  },)
-  
-const callaboutpage = async() => {
 
-    
-  
-     try {
+const callaboutpage = async() => {
+    try { 
          const res = await fetch('/aboutme', {
          method:"GET",
           header:{
           Accept:"application/json",
         "Content-Type": "application/json"
          },
-         credentials:"include"
-        });
-        const data = await res.json()
+         credentials:"include",
+        },);
         if(res.status === 401){
-          console.log(data)
-         navigate('/login')
+         
+          navigate('/login')
+        }
+        else{
+          setLoading(true);
         }
       }
       catch (error) {
         navigate('/login')
-        console.log('error')
+         console.log('error')
         }
       }
+
+      useEffect(() => {
+        callaboutpage();
+       
+      },);
+      
    
   return (
     <div>
-        <form method="GET">
-        <Projects />
-        </form>
+       {  loading ? <div>
+                   <form method="GET">
+                    <Projects />
+                     </form>
+                     </div>
+                  : <Loading />  }
     </div>
   )
 
