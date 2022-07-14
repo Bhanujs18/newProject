@@ -44,7 +44,7 @@ const Navbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -88,7 +88,7 @@ const Navbar = () => {
               }}
             >
                 <Stack onClick={handleCloseNavMenu} direction='column'>
-                <Button ><Link className='navButtonn' to="/">Home</Link></Button>
+                <Button ><Link className='navButtonn' to="/home">Home</Link></Button>
             <Button > <Link className='navButtonn' to="/aboutme">About me</Link></Button>
             <Button ><Link className='navButtonn' to="/chat">Chat</Link></Button> 
             </Stack>
@@ -115,7 +115,7 @@ const Navbar = () => {
           </Typography>
           <Box onClick={handleCloseNavMenu} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           
-            <Button  onClick={handleCloseNavMenu}><Link className='navButton' to="/">Home</Link></Button>
+            <Button  onClick={handleCloseNavMenu}><Link className='navButton' to="/home">Home</Link></Button>
             <Button > <Link className='navButton' to="/aboutme">About me</Link></Button>
             <Button ><Link className='navButton' to="/chat">Chat</Link></Button> 
           </Box>

@@ -1,12 +1,16 @@
 const express = require('express')
 const jwt = require('jsonwebtoken')
 const router = express.Router();
+var cookieParser = require('cookie-parser')
+router.use(cookieParser())
 
 const bcrypt = require('bcrypt')
 require('../DATABSE/db')
 const authenticate = require('../middleware/authenticate')
 
 const User = require('../models/user.js')
+
+let truelogin;
 
 router.post('/register', async (req, res) => {
    
@@ -44,18 +48,19 @@ try{
 if(userLogin){
      const isMatch  = await bcrypt.compare(password, userLogin.password)
    
-     const token = userLogin.generateAuthToken();
-        
-     res.cookie("jwtoken", token ,{
+     const token = await userLogin.generateAuthToken();
+        console.log(token)
+          res.cookie("jwtoken", token ,{
           expires:new Date(Date.now()+15000000),
           httpOnly:true,
      });
 
      if(!isMatch){
           return res.status(422).json({error :" error!!"})
-          console.log(isMatch)
+          
      }
      else{
+          truelogin = true;
           return res.status(201).json({message : "Succesfull"})
      }
 }
@@ -73,7 +78,12 @@ catch(err){
 
 
 router.get('/aboutme', authenticate ,(req, res) => {
+     if(truelogin === true){
      res.send(req.rootUser);
+     }
+     else{
+          res.send('error')
+     }
    })
 
 module.exports = router;
