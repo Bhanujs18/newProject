@@ -37,7 +37,6 @@ const callaboutpage = async() => {
 
       useEffect(() => {
         callaboutpage();
-       
       },);
       
    

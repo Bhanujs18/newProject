@@ -85,5 +85,9 @@ router.get('/aboutme', authenticate ,(req, res) => {
           res.send('error')
      }
    })
+   router.get('/chat', authenticate ,(req, res) => {
+   
+     res.send(req.rootUser);
+   })
 
 module.exports = router;
