@@ -24,7 +24,7 @@ const callchatpage = async() => {
         }
       }
       catch (error) {
-         window.alert('error catch')
+         window.alert('Login For Best Experience')
         }
       }
 

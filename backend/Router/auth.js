@@ -90,4 +90,9 @@ router.get('/aboutme', authenticate ,(req, res) => {
      res.send(req.rootUser);
    })
 
+
+   router.get('/logout',(req, res) => {
+     res.clearCookie('jwtoken',{path:'/'});
+     res.status.send('User Logout');
+   })
 module.exports = router;

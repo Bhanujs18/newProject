@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Loading from './Loading.js';
+import AboutmeUpper from './AboutmeUpper';
 
         
 const AboutMe = () => 
@@ -44,6 +45,7 @@ const callaboutpage = async() => {
     <div>
        {  loading ? <div>
                    <form method="GET">
+                    <AboutmeUpper />
                     <Projects />
                      </form>
                      </div>

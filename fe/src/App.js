@@ -9,6 +9,7 @@ import './App.css';
 
 import Home from './components/Home'
 import Footer  from './components/Footer';
+import Logout from './components/Logout';
 
 
 const App = () => {
@@ -16,11 +17,12 @@ const App = () => {
     <>
      <Navbar />
       <Routes className='millde'> 
-         <Route  exact path="/home" element={<Home/>} />
+         <Route  exact path="/" element={<Home/>} />
           <Route exact path="register" element={<SignUp/>} />
           <Route exact path="chat" element={<Chat />} />
           <Route exact path="aboutme" element={<AboutMe />} />
           <Route exact path="login" element={<Login />} />
+          <Route exact path="logout" element={<Logout />} />
       </Routes>
       <Footer />
       

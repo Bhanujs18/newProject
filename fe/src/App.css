@@ -54,6 +54,7 @@ body{
 
  .signup{
     background: rgb(255,255,255);
+    height: 100vh;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(127,200,232,0.48829954345019255) 65%);
  }
 .signUpBox{
@@ -104,37 +105,6 @@ body{
 #submit{
     background-color: rgb(66, 211, 12);
     color: white;
-}
-
-.login{
-    width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- 
-}
-.loginDiv{
-display: flex;
-background-image: url('https://swall.teahub.io/photos/small/302-3023885_professional-blue-website-background.png');
-background-repeat: no-repeat;
-background-size: cover;
-    align-items: center;
-    
-    height: 100%;
-    width: 100%;
-    
-    position: absolute;
-    justify-content: center;
-}
-
-.gridlogin{
-    width: 30rem;
-    padding: 2% 6%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -416,6 +386,9 @@ width: max-content;
 
 .contactbutton button{
   padding: 2% 6%;
+  background-color: rgb(12, 189, 12);
+  color: white;
+  border: none;
 }
 
 .contactimg{
@@ -433,3 +406,26 @@ width: max-content;
     
   }
 }
+
+
+.aboutupperdiv{
+  width: 100%;
+
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.pagepartion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .aboutupperdiv {
+   flex-wrap: wrap; 
+  }
+}
+

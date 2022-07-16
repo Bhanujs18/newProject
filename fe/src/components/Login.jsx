@@ -35,48 +35,56 @@ const res = await fetch('./login',{
 
 
   return (
-    <div className='loginDiv'>
-    <div className='login'>
-      <form method="POST">
-        <Grid className='gridlogin'>
-            <Typography>Login</Typography>
+<div>
+
+
+<div className='signup'>
+
+<form method='POST'  className='inputSignUp' >
+
+  <div className='signUpBox'>
+     <Typography  className='headingSignUp' fontSize='large' >Login</Typography>
+       
+       
+        <Grid className='grid' item xs={12}>
+          <TextField
+            required
+            className='inputSignUp'
+            fullWidth
+            name="email"
+            label="email"
+            type="email"
+            id="email"
+            autoComplete="new-password"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
         </Grid>
-      <Grid className='gridlogin' item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="email"
-                  label="email"
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  autoComplete="new-password"
-                 />
-              </Grid>
-              <Grid className='gridlogin' item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  autoComplete="new-password"
-              />
-              </Grid>
-              <Grid className='gridlogin' id='submit' >
-              <Button type='submit'
-              onClick={loginUser}
-              sx={{color:'inherit'}}>Submit</Button>
-              </Grid>
-              </form>
       
-    </div>
-    </div>
-  )
+        <Grid className='grid' item xs={12}>
+          <TextField
+            required
+            className='inputSignUp'
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+           
+            value={password}
+           onChange={(e) => setPassword(e.target.value)}
+           />
+        </Grid>
+        <Grid className='grid' id='submit' >
+        <Button type='submit' sx={{color:'inherit'}} onClick={loginUser}>Submit</Button>
+        </Grid>
+        </div>
+        </form>
+</div>
+
+
+  
+  </div>)
 }
 
 export default Login
