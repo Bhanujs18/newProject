@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Loading from './Loading.js';
 import AboutmeUpper from './AboutmeUpper';
+import { Typography } from '@mui/material';
+import Skills from './Skills';
 
         
 const AboutMe = () => 
@@ -43,10 +45,14 @@ const callaboutpage = async() => {
    
   return (
     <div>
-       {  loading ? <div>
+       {  loading ? <div >
                    <form method="GET">
+                   <Typography> <h1 className='aboutmeheading'>About Me</h1></Typography>
+                   <div className='aboutpage'>
                     <AboutmeUpper />
+                    <Skills />
                     <Projects />
+                    </div>
                      </form>
                      </div>
                   : <Loading />  }

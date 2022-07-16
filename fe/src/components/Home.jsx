@@ -10,7 +10,7 @@ const Home = () => {
                     Full Stack Developer</h1> </Typography>
                     </div> 
                     <div >
-                    <button className='downloadcv'><Typography>DOWNLOAD CV</Typography></button> 
+                   <a href='/aboutme' className='nodeco'><button className='downloadcv'><Typography>CLICK HERE FOR MORE</Typography></button> </a>
                     <br />
    </div>
                        
