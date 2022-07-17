@@ -32,6 +32,7 @@ const Navbar = () => {
   };
 
   const handleCloseUserMenu = () => {
+
     setAnchorElUser(null);
   };
 
@@ -55,7 +56,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Bhanu js
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -111,7 +112,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Bhanu js
           </Typography>
           <Box onClick={handleCloseNavMenu} sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           

@@ -1,23 +1,44 @@
 
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
 body{
     margin: 0%;
     padding: 0%;
-    background: linear-gradient(-45deg, #ffffff, #ffffff);
     background-size: 400% 400%;
-    animation: gradient 1s ease infinite;
-}
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
- }
+}
  .navButton{
      text-decoration: none;
      color: white;
@@ -53,9 +74,9 @@ body{
  }
 
  .signup{
-    background: rgb(255,255,255);
+   
     height: 100vh;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(127,200,232,0.48829954345019255) 65%);
+   
  }
 .signUpBox{
      width: 30rem;
@@ -114,6 +135,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  
    
 }
 .dividerHome{
@@ -129,8 +151,10 @@ body{
 
 .frontText{
     padding-top: 7%;
-    font-size:10vh;
+    font-size:9vh;
     display:flex;
+    text-align: left;
+    
     align-items: center;
     justify-content: center;
    
@@ -265,7 +289,7 @@ transition: background-color 0.1s ease-out;
     background-color: #0a69aa;
   }
   .cards{
-    padding: 2%;
+   
     color: #0a69aa;
     background-color: #0a69aa;
   }
@@ -358,6 +382,7 @@ transition: background-color 0.1s ease-out;
 .contactbox{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
+  background-color: white;
 width: max-content;
   padding: 3%;
 }
@@ -427,6 +452,7 @@ width: max-content;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 2%;
 }
 @media screen and (max-width: 800px) {
   .aboutupperdiv {

@@ -27,6 +27,7 @@ const callaboutpage = async() => {
         if(res.status === 401){
          
           navigate('/login')
+         
         }
         else{
           setLoading(true);
