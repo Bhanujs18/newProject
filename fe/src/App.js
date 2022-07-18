@@ -6,7 +6,6 @@ import Chat from './components/Chat'
 import AboutMe from './components/AboutMe'
 import Login from './components/Login';
 import './App.css';
-
 import Home from './components/Home'
 import Footer  from './components/Footer';
 import Logout from './components/Logout';

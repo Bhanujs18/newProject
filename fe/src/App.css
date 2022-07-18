@@ -154,7 +154,7 @@ body{
     font-size:9vh;
     display:flex;
     text-align: left;
-    
+    color: white;
     align-items: center;
     justify-content: center;
    
@@ -285,17 +285,18 @@ transition: background-color 0.1s ease-out;
 
  .projectDiv{
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
     background-color: #0a69aa;
   }
   .cards{
-   
+    width: 40%;
     color: #0a69aa;
     background-color: #0a69aa;
   }
- @media screen and (max-width: 600px) {
-    .projectDiv {
-     display: block;
+ @media screen and (max-width: 700px) {
+    .cards {
+      width: 80%;
       
     }
   }
@@ -463,7 +464,7 @@ width: max-content;
 
 .aboutmeheading{
   text-align: center;
-
+color: white;
 
   font-size: 40px;
 }
@@ -475,6 +476,7 @@ width: max-content;
 .abouttext{
   text-align: center;
   padding-top: 1%;
+  color: white;
 }
 
 
@@ -488,4 +490,10 @@ width: max-content;
 
 .nodeco{
   text-decoration: none;
+}
+
+.aboutpageimg{
+  height: 60%;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }

@@ -12,17 +12,16 @@ export default function Projects() {
     <Card className='cards'>
       <CardMedia
         component="img"
-        alt="green iguana"
-        height="140"
-        image="https://fictionhorizon.com/wp-content/uploads/2022/02/IsshikiMomotsuki-1024x619.jpg"
-      />
+        alt="img"
+        height="170"
+        image="photos/1.jpeg"
+       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+         PortFolio
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        This website contains several sections that collectively define who I am, and I will be constantly updating it and adding new documentations. 
         </Typography>
       </CardContent>
       <CardActions>
@@ -31,54 +30,7 @@ export default function Projects() {
       </CardActions>
     </Card>
     
-    <Card className='cards' >
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="https://fictionhorizon.com/wp-content/uploads/2022/02/IsshikiMomotsuki-1024x619.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-    
-
-    <Card className='cards' >
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="https://fictionhorizon.com/wp-content/uploads/2022/02/IsshikiMomotsuki-1024x619.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-    
-
-  
-
+   
     </div>
     
   );

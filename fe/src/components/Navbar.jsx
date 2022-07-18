@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
-import "../App.css"
+import "../App.css";
 
 
 const Navbar = () => {

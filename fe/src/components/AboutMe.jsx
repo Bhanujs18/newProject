@@ -52,6 +52,7 @@ const callaboutpage = async() => {
                    <div className='aboutpage'>
                     <AboutmeUpper />
                     <Skills />
+                    <Typography> <h1 className='aboutmeheading'>Projects</h1></Typography>
                     <Projects />
                     </div>
                      </form>

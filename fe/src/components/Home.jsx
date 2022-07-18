@@ -6,7 +6,7 @@ const Home = () => {
     <div className='homeDiv'>
       <div className='dividerHome'>
                     <div className='blockHome'><Typography> <h1 className='frontText' >Hi,<br />
-                    I'm jyfuy <br />
+                    I'm Bhanu js <br />
                     Full Stack Developer</h1> </Typography>
                     </div> 
                     <div >
