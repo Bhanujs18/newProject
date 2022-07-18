@@ -6,7 +6,7 @@ const Skills = () => {
     <div className='aboutupperdiv'>
 
 <div className='pagepartion'>
-<button className='downloadcv'><Typography>DOWNLOAD CV</Typography></button> 
+<Typography><a href='photos/cv.pdf' className='downloadcv cv' download>DOWNLOAD CV </a></Typography>
         </div>
         <div className='pagepartion'>
             <div className='skiilsicons'>
