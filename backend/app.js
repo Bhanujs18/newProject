@@ -9,7 +9,7 @@ const app = express();
 
 dotenv.config({ path: './config.env' })
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 
 const User = require('./models/user')
@@ -41,7 +41,9 @@ app.use(require('./Router/auth'));
 //   })
 
 
-
+if( Process.env.NODE_ENV=="production"){
+  app.use(express.static("fe/build"));
+}
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
