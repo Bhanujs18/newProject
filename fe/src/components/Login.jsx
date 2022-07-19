@@ -3,10 +3,14 @@ import React, {useState} from 'react';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import { Button, Typography } from '@mui/material';
+import { useContext } from 'react';
 
+import { UserContext } from '../App';
 
 
 const Login = () => {
+
+  const { dispatch} = useContext(UserContext)
   
   const [email, setEmail] = useState(' ');
   const [password, setPassword] = useState(' ');
@@ -27,7 +31,9 @@ const res = await fetch('./login',{
      window.alert("Invalid Login");
     }
     else{
+     dispatch({type:"USER", payload:true})
      window.alert("Login Successfully")
+   
     }
  
   

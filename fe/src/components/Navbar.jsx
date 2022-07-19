@@ -14,9 +14,33 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 import "../App.css";
-
+import { useContext } from 'react';
+import { UserContext } from '../App';
 
 const Navbar = () => {
+
+  const {state} = useContext(UserContext);
+
+const RenderMenu = () => {
+  if(state){
+    return (
+      <Stack onClick={handleCloseUserMenu} direction='column'>
+
+      <Button ><Link className='navButtonn' to="/logout">logout</Link></Button>
+     
+      </Stack>
+    )}
+    else {
+      return (
+        <Stack onClick={handleCloseUserMenu} direction='column'>
+        <Button ><Link className='navButtonn' to="/login">Login</Link></Button>
+        <Button ><Link className='registerButton' to="/register">Register</Link></Button>
+        </Stack>
+      )
+    }
+  
+}
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -145,13 +169,9 @@ const Navbar = () => {
               onClose={handleCloseUserMenu}
             >
              
-              <Stack onClick={handleCloseUserMenu} direction='column'>
-
-              <Button ><Link className='navButtonn' to="/login">Login</Link></Button>
-            <Button ><Link className='navButtonn' to="/logout">logout</Link></Button>
-            <Button ><Link className='registerButton' to="/register">Register</Link></Button>
+             
+                 <RenderMenu />
            
-            </Stack>
             
             </Menu>
           </Box>

@@ -1,8 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-
+import { useEffect , useContext} from 'react';
+import { UserContext } from '../App';
 const Logout = () => {
+
+  const { dispatch} = useContext(UserContext)
+
     const navigate = useNavigate();
 useEffect(() => {
 
@@ -15,8 +18,8 @@ useEffect(() => {
         credentials:"include",
        })
        .then((res) => {
+            dispatch({type:"USER", payload:false});
             navigate('/login');
-            window.alert("logout Succesfully")
        })
 });
 

@@ -9,11 +9,19 @@ import './App.css';
 import Home from './components/Home'
 import Footer  from './components/Footer';
 import Logout from './components/Logout';
-
+import { createContext } from 'react';
+import { useReducer } from 'react';
+import {initialState, reducer} from './useReducer';
+export const UserContext = createContext();
+ 
 
 const App = () => {
+
+  const [state, dispatch] = useReducer(reducer, initialState)
+
   return (
     <>
+    <UserContext.Provider value={{state, dispatch}}>
      <Navbar />
       <Routes className='millde'> 
          <Route  exact path="/" element={<Home/>} />
@@ -24,6 +32,7 @@ const App = () => {
           <Route exact path="logout" element={<Logout />} />
       </Routes>
       <Footer />
+      </UserContext.Provider>
       
    
      
