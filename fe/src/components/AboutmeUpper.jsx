@@ -6,7 +6,7 @@ const AboutmeUpper = () => {
     <div className='aboutupperdiv'>
     
         <div className='pagepartion'>
-          <img alt='img' className='aboutpageimg' src="photos/sa.jpg" />
+          <img alt='img' className='aboutpageimg' src="photos/2.png" />
         </div>
         <div className='pagepartion'>
           <Typography ><p className='abouttext'>Hello, I'm Bhanu Pratap Singh. I'm an innovative and dedicated developer.
