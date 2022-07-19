@@ -1,6 +1,5 @@
 ./backend/node_modules
 ./frontend/node_modules
-config.env
 node_modules/.package-lock.json
 node_modules/.bin/browserslist
 node_modules/.bin/browserslist-lint
@@ -10019,3 +10018,4 @@ fe/node_modules/.cache/default-development/12.pack
 fe/node_modules/.cache/default-development/13.pack
 fe/node_modules/.cache/default-development/index.pack
 fe/node_modules/.cache/default-development/index.pack.old
+node_modules
