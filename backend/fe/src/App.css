@@ -1,0 +1,527 @@
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-size: 400% 400%;
+
+}
+ .navButton{
+     text-decoration: none;
+     color: white;
+ }
+ .navButtonn{
+     text-decoration: none;
+     color: inherit;
+ }
+ .registerButton{
+    background-color: rgb(30, 164, 30);
+   text-decoration: none;
+    padding: 10%;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .inputSignUp{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ }
+ .grid{
+    padding: 2% 6% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+
+ .signup{
+   
+    height: 100vh;
+   
+ }
+.signUpBox{
+     width: 30rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.headingSignUp{
+    font-size: x-large;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    background-color: rgb(83, 136, 234);
+   
+}
+.copyrightdiv{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    padding-top: 2%;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 136, 234);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    position: static;
+}
+
+.copyrighti{
+ 
+ 
+    text-decoration: none; 
+    
+
+}
+#submit{
+    background-color: rgb(66, 211, 12);
+    color: white;
+}
+
+
+ 
+.homeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+   
+}
+.dividerHome{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    height: 90vh;
+    flex-wrap: wrap;
+ 
+   
+    justify-content: center;
+}
+
+.frontText{
+    padding-top: 7%;
+    font-size:9vh;
+    display:flex;
+    text-align: left;
+    color: white;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .frontText {
+      text-align: center;
+    }
+  }
+.downloadcv{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+    padding: 5% 3%;
+    border: none;
+    color: rgb(0, 0, 0);
+    width: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+
+
+
+
+
+.downloadcv:hover {
+    color:white;
+background-color: green;
+cursor: pointer;
+transition: background-color 0.1s ease-out;
+}
+
+.cv{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+.blockHome{
+   display: flex;
+   align-self: center;
+   justify-content: center;
+  
+}
+
+.imgHome{
+  height: 60%;
+    width: 75%;
+    
+}
+.imgHomee{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .imgHome {
+   
+   display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imgHomee {
+   display: flex;
+   height: 70%;
+  }
+}
+
+
+.footerDiv{
+    display: flex;
+    align-items: center;
+    background-color: #a0ccf0;
+    padding: 2% 0% ;
+    width: 100%;
+    
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .footerDiv {
+      flex-wrap: wrap;
+      
+    }
+  }
+.footerdivision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .footerdivision {
+     
+      padding-top: 5%;
+    }
+  }
+
+.icon1{
+    color: black;
+}
+.icon1:hover{
+    color: rgb(206, 30, 168);
+    transform: scale(1.3);
+}
+.icon2{
+    color: black;
+ }
+ .icon2:hover{
+    color: rgb(53, 108, 192);
+    transform: scale(1.3);
+}
+ .icon3{
+    color: black;
+ }
+ .icon3:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+   
+}
+ .icon4{
+    color: black;
+ }
+ .icon4:hover{
+    color: rgb(53, 108, 192);
+    transform: scale(1.3);
+}
+
+ #socialicons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+ }
+
+
+ .projectDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a69aa;
+  }
+  .cards{
+    width: 40%;
+    color: #0a69aa;
+    background-color: #0a69aa;
+  }
+ @media screen and (max-width: 700px) {
+    .cards {
+      width: 80%;
+      
+    }
+  }
+
+
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+@keyframes ldio-ovd9v94bgcd-1 {
+    0% { top: 36px; height: 128px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  @keyframes ldio-ovd9v94bgcd-2 {
+    0% { top: 41.99999999999999px; height: 116.00000000000001px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  @keyframes ldio-ovd9v94bgcd-3 {
+    0% { top: 48px; height: 104px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  .ldio-ovd9v94bgcd div { position: absolute; width: 30px }.ldio-ovd9v94bgcd div:nth-child(1) {
+    
+    left: 35px;
+    background: #07abcc;
+    animation: ldio-ovd9v94bgcd-1 1.36986301369863s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: -0.27397260273972607s
+  }
+  .ldio-ovd9v94bgcd div:nth-child(2) {
+    left: 85px;
+    background: #91bcc6;
+    animation: ldio-ovd9v94bgcd-2 1.36986301369863s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: -0.13698630136986303s
+  }
+  .ldio-ovd9v94bgcd div:nth-child(3) {
+    left: 135px;
+    background: #0a69aa;
+    animation: ldio-ovd9v94bgcd-3 1.36986301369863s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: undefineds
+  }
+  
+  .loadingio-spinner-pulse-71qe463jis5 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+
+  }
+  .ldio-ovd9v94bgcd {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-ovd9v94bgcd div { box-sizing: content-box; }
+  /* generated by https://loading.io/ */
+
+  .contactus{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4.3%;
+    align-items: center;
+    justify-content: center;
+
+  
+    
+  }
+  .contactusDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+ 
+   
+  }
+.contactbox{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  background-color: white;
+width: max-content;
+  padding: 3%;
+}
+
+
+  .formdiv{
+   
+    background-color: white;
+    display: block;
+  }
+  .inputContact{
+    width: 70vh;
+    height: 6vh;
+  }
+
+.getintouch{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background-color: #0077b6;
+
+}
+.contactbutton{
+  background-color: #0077b6;
+  display: flex;
+  align-self: center;
+  padding: 2% 6%;
+  justify-content: center;
+}
+
+.contactbutton button{
+  padding: 2% 6%;
+  background-color: rgb(12, 189, 12);
+  color: white;
+  border: none;
+}
+
+.contactimg{
+  height: 75vh;
+  width: 58%;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .contactimg {
+   display: none;
+    
+  }
+}
+
+
+.aboutupperdiv{
+  width: 100%;
+
+  display: flex;
+  padding: 2% 0%;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagepartion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+}
+@media screen and (max-width: 800px) {
+  .aboutupperdiv {
+   flex-wrap: wrap; 
+  
+  }
+}
+
+.aboutmeheading{
+  text-align: center;
+color: white;
+
+  font-size: 40px;
+}
+
+.aboutpage{
+  background-color: #0a69aa;
+}
+
+.abouttext{
+  text-align: center;
+  padding-top: 1%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+ 
+}
+@media screen and (max-width: 700px) {
+  .abouttext {
+   font-size: 1rem;
+  
+  }
+}
+
+
+.skillIcons{
+  height: 7rem;
+  width:7rem;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nodeco{
+  text-decoration: none;
+}
+
+.aboutpageimg{
+  height: 60%;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
