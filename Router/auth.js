@@ -52,7 +52,6 @@ if(userLogin){
         console.log(token)
           res.cookie("jwtoken", token ,{
           expires:new Date(Date.now()+15000000),
-          httpOnly:true,
      });
 
      if(!isMatch){

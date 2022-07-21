@@ -25,7 +25,8 @@
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.0",
     "moongoose": "^0.0.1",
-    "nodemin": "^1.0.1"
+    "nodemin": "^1.0.1",
+    "dotenv": "^16.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
