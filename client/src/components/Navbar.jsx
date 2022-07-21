@@ -22,20 +22,21 @@ const Navbar = () => {
   const {state} = useContext(UserContext);
 
 const RenderMenu = () => {
-  if(state){
+  if(state === false){
     return (
       <Stack onClick={handleCloseUserMenu} direction='column'>
-
-      <Button ><Link className='navButtonn' to="/logout">logout</Link></Button>
-     
-      </Stack>
+        <Button ><Link className='navButtonn' to="/login">Login</Link></Button>
+        <Button ><Link className='registerButton' to="/register">Register</Link></Button>
+        </Stack>
     )}
     else {
       return (
         <Stack onClick={handleCloseUserMenu} direction='column'>
-        <Button ><Link className='navButtonn' to="/login">Login</Link></Button>
-        <Button ><Link className='registerButton' to="/register">Register</Link></Button>
+
+        <Button ><Link className='navButtonn' to="/logout">logout</Link></Button>
+       
         </Stack>
+       
       )
     }
   
