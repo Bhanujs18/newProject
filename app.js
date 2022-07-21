@@ -21,7 +21,7 @@ if (
 const User = require("./models/user");
 require("./DATABSE/db.js");
 app.use(express.json());
-app.use("/api", require("./Router/auth"));
+app.use("/", require("./Router/auth"));
 
 // const middleware = (req,res,next)=>{
 //     console.log('miidleware')

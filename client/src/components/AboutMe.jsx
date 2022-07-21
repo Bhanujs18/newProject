@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   const callaboutpage = async () => {
     try {
-      const res = await fetch("/api/aboutme", {
+      const res = await fetch("/aboutme", {
         method: "GET",
         header: {
           Accept: "application/json",

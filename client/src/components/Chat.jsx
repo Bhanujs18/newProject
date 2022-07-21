@@ -7,7 +7,7 @@ const Chat = () => {
 
   const callchatpage = async () => {
     try {
-      const res = await fetch("/api//chat", {
+      const res = await fetch("/chat", {
         method: "GET",
         header: {
           "Content-Type": "application/json",
